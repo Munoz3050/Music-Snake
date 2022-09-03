@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+.content {
+    float: left;
+    width: 20%;
+    padding: 50px;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: purple;
+}
+
+.score,
+.live {
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    font-size: 26px;
+}
+
+.score {
+    color: purple;
+}
+
+.live {
+    color: purple;
+}
+
+.personaje{
+    height: 84px;
+    width: 84px;
+    background: url(Imagenes/Jeyvi\ \(1\).png );
+    margin: 0 auto;
+    animation: correr 1s steps(2) infinite;
+}
+
+@keyframes correr{
+    0% {
+        background-position: 0px;
+    }
+    100%{
+        background-position: -168px;
+    }
+}
+
+.personaje2{
+    height: 84px;
+    width: 84px;
+    background: url(Imagenes/P1.png);
+    margin: 0 auto;
+    animation: seguidor 1s steps(2) infinite;
+}
+
+@keyframes seguidor{
+    0% {
+        background-position: 0px;
+    }
+    100%{
+        background-position: -168px;
+    }
+}
